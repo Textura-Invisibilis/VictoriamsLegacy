@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "victoriams-legacy:item/raw_victorine_crystal"
+  }
+}

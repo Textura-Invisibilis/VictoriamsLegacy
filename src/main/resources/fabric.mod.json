@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "victoriams-legacy",
+  "version": "${version}",
+  "name": "VictoriamsLegacy",
+  "description": "Cool materials! Deadly weapons! Funky trees! Stupid food! And more!!",
+  "authors": ["The Nation of New Victoriam"],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/victoriams-legacy/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "gay.invis.victoriamsLegacy.client.VictoriamsLegacyDataGenerator"
+    ],
+    "client": [
+      "gay.invis.victoriamsLegacy.client.VictoriamsLegacyClient"
+    ],
+    "main": [
+      "gay.invis.victoriamsLegacy.VictoriamsLegacy"
+    ]
+  },
+  "mixins": [
+    "victoriams-legacy.mixins.json",
+    {
+      "config": "victoriams-legacy.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
