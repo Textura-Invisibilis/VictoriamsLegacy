@@ -30,6 +30,8 @@
   "depends": {
     "fabricloader": ">=${loader_version}",
     "fabric-api": "*",
-    "minecraft": "${minecraft_version}"
+    "minecraft": "${minecraft_version}",
+    "trinkets": "3.10.0",
+    "lychee": "6.4.3"
   }
 }
