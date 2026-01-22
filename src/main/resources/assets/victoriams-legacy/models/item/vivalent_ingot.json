@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "victoriams-legacy:item/processed_vivalent"
+    "layer0": "victoriams-legacy:item/vivalent_ingot"
   }
 }
