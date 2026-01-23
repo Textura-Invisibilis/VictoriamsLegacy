@@ -1,11 +1,11 @@
 {
-  "parent": "minecraft:victoriams-legacy/vividological_advancement_starter",
+  "parent": "minecraft:victoriams-legacy/get_raw_vivalent",
   "criteria": {
-    "got_raw_vivalent": {
+    "got_vivalent_dust": {
       "conditions": {
         "items": [
           {
-            "items": "victoriams-legacy:raw_vivalent_crystal"
+            "items": "victoriams-legacy:vivalent_dust"
           }
         ]
       },
@@ -14,16 +14,16 @@
   },
   "display": {
     "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
-    "description": "Use the power of raw electricity to create a new mineral",
+    "description": "Crush Vivalent using an Anvil",
     "icon": {
       "count": 1,
-      "id": "victoriams-legacy:raw_vivalent_crystal"
+      "id": "victoriams-legacy:vivalent_dust"
     },
-    "title": "Crystalline Reconstruction"
+    "title": "Powdered Crystals"
   },
   "requirements": [
     [
-      "got_raw_vivalent"
+      "got_vivalent_dust"
     ]
   ],
   "sends_telemetry_event": true

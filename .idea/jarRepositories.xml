@@ -56,5 +56,15 @@
       <option name="name" value="Ladysnake Libs" />
       <option name="url" value="https://maven.ladysnake.org/releases" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven" />
+      <option name="name" value="maven" />
+      <option name="url" value="https://maven.is-immensely.gay/releases" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven2" />
+      <option name="name" value="maven2" />
+      <option name="url" value="https://maven.shedaniel.me/" />
+    </remote-repository>
   </component>
 </project>

@@ -12,5 +12,6 @@ public class VictoriamsLegacy implements ModInitializer {
     public void onInitialize() {
         LOGGER.info("The nation of New Victoriam rides high with the power of new things to tinker with!");
         VictoriamsLegacyItems.initialize();
+        VividologicalBlocks.initialize();
     }
 }

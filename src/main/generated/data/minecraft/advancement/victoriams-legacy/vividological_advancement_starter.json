@@ -1,11 +1,10 @@
 {
-  "parent": "minecraft:victoriams-legacy/vividological_advancement_starter",
   "criteria": {
-    "got_raw_vivalent": {
+    "vividological_advancement_tree": {
       "conditions": {
         "items": [
           {
-            "items": "victoriams-legacy:raw_vivalent_crystal"
+            "items": "minecraft:quartz"
           }
         ]
       },
@@ -14,16 +13,16 @@
   },
   "display": {
     "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
-    "description": "Use the power of raw electricity to create a new mineral",
+    "description": "Serving you deadly weapons and modest amounts of materials since 2025",
     "icon": {
       "count": 1,
-      "id": "victoriams-legacy:raw_vivalent_crystal"
+      "id": "minecraft:quartz"
     },
-    "title": "Crystalline Reconstruction"
+    "title": "Vividological"
   },
   "requirements": [
     [
-      "got_raw_vivalent"
+      "vividological_advancement_tree"
     ]
   ],
   "sends_telemetry_event": true

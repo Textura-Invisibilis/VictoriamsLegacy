@@ -1,0 +1,31 @@
+{
+  "parent": "minecraft:victoriams-legacy/get_raw_vivalent",
+  "criteria": {
+    "got_vivalent_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": "victoriams-legacy:vivalent_ingot"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "description": "Process a Vivalent Crystal into some Vivalentic Alloy!",
+    "frame": "goal",
+    "icon": {
+      "count": 1,
+      "id": "victoriams-legacy:vivalent_ingot"
+    },
+    "title": "An Alternative Metallic Substance for Weaponry Reasons"
+  },
+  "requirements": [
+    [
+      "got_vivalent_ingot"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

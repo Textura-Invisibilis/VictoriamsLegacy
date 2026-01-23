@@ -3,5 +3,7 @@
   "item.victoriams-legacy.vivalent_dust": "Vivalent Dust",
   "item.victoriams-legacy.vivalent_ingot": "Vivalentic Alloy",
   "item.victoriams-legacy.dusted_eye": "Vivid Eye",
-  "item.victoriams-legacy.vivalentic_glaive": "Vivalentic Glaive"
+  "item.victoriams-legacy.vivalentic_glaive": "Vivalentic Glaive",
+  "itemGroup.vividological": "Vividological",
+  "block.victoriams-legacy.compacted_vivalent": "Compacted Vivalent"
 }

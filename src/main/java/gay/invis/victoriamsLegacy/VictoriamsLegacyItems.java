@@ -1,6 +1,7 @@
 package gay.invis.victoriamsLegacy;
 
 import gay.invis.victoriamsLegacy.toolMaterials.VivalenticToolMaterial;
+import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.component.type.FoodComponent;
 import net.minecraft.entity.effect.StatusEffectInstance;
@@ -8,6 +9,8 @@ import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 public class VictoriamsLegacyItems {
@@ -51,17 +54,28 @@ public class VictoriamsLegacyItems {
             "vivalentic_glaive"
     );
 
+    public static final RegistryKey<ItemGroup> CUSTOM_ITEM_GROUP_KEY = RegistryKey.of(Registries.ITEM_GROUP.getKey(), Identifier.of(VictoriamsLegacy.MOD_ID, "item_group"));
+    public static final ItemGroup CUSTOM_ITEM_GROUP = FabricItemGroup.builder()
+            .icon(() -> new ItemStack(VictoriamsLegacyItems.VIVALENT_INGOT))
+            .displayName(Text.translatable("itemGroup.vividological"))
+            .build();
+
     public static void initialize() {
         // Get the event for modifying entries in the ingredients group.
 // And register an event handler that adds our suspicious item to the ingredients group.
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS)
-                .register(entries ->{
-                            entries.add(VictoriamsLegacyItems.RAW_VIVALENT_CRYSTAL);
-                            entries.add(VictoriamsLegacyItems.VIVALENT_INGOT);
-                            entries.add(VictoriamsLegacyItems.DUSTED_EYE);
-                            entries.add(VictoriamsLegacyItems.VIVALENT_DUST);
-                        }
-                        );
-        };
+        // Register the group.
+        Registry.register(Registries.ITEM_GROUP, CUSTOM_ITEM_GROUP_KEY, CUSTOM_ITEM_GROUP);
 
+// Register items to the custom item group.
+        ItemGroupEvents.modifyEntriesEvent(CUSTOM_ITEM_GROUP_KEY).register(itemGroup -> {
+            itemGroup.add(VictoriamsLegacyItems.VIVALENT_DUST);
+            itemGroup.add(VictoriamsLegacyItems.VIVALENT_INGOT);
+            itemGroup.add(VictoriamsLegacyItems.DUSTED_EYE);
+            itemGroup.add(VictoriamsLegacyItems.RAW_VIVALENT_CRYSTAL);
+            itemGroup.add(VictoriamsLegacyItems.VIVALENTIC_GLAIVE);
+            // ...
+        });
+
+    }
 }
+

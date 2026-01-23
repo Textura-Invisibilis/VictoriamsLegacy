@@ -1,0 +1,10 @@
+{
+  "type": "lychee:lightning_channeling",
+  "item_in": [{
+      "item": "quartz"
+    }],
+  "post": [{
+    "type": "drop_item",
+    "id": "victoriams-legacy:raw_vivalent_crystal"
+  }]
+}

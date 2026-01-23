@@ -1,0 +1,5 @@
+{
+    "type": "lychee:block_crushing",
+    "item_in": "victoriams-legacy:raw_vivalent_crystal",
+    "post": "drop victoriams-legacy:vivalent_dust"
+}
