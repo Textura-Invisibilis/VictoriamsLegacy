@@ -1,0 +1,29 @@
+{
+  "criteria": {
+    "got_raw_vivalent": {
+      "conditions": {
+        "items": [
+          {
+            "items": "victoriams-legacy:raw_vivalent_crystal"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "description": "Use the power of raw electricity to create a new mineral",
+    "icon": {
+      "count": 1,
+      "id": "victoriams-legacy:raw_vivalent_crystal"
+    },
+    "title": "Crystalline Reconstruction"
+  },
+  "requirements": [
+    [
+      "got_raw_vivalent"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

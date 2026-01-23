@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "victoriams-legacy",
   "version": "${version}",
-  "name": "VictoriamsLegacy",
+  "name": "Vividological",
   "description": "Cool materials! Deadly weapons! Funky trees! Stupid food! And more!!",
   "authors": ["The Nation of New Victoriam"],
   "contact": {},
@@ -31,7 +31,6 @@
     "fabricloader": ">=${loader_version}",
     "fabric-api": "*",
     "minecraft": "${minecraft_version}",
-    "trinkets": "3.10.0",
-    "lychee": "6.4.3"
+    "trinkets": "3.10.0"
   }
 }
