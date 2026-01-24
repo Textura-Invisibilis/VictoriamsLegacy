@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "victoriams-legacy:compacted_vivalent"
+          "name": "vividological:compacted_vivalent"
         }
       ],
       "conditions": [

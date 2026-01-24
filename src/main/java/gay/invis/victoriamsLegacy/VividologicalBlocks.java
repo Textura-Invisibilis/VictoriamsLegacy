@@ -26,7 +26,7 @@ public class VividologicalBlocks {
     }
 
     public static final Block COMPACTED_VIVALENT = register(
-            new Block(AbstractBlock.Settings.create().sounds(BlockSoundGroup.AMETHYST_BLOCK).requiresTool()),
+            new Block(AbstractBlock.Settings.create().sounds(BlockSoundGroup.AMETHYST_BLOCK).requiresTool().hardness(2.0f)),
             "compacted_vivalent",
             true
     );

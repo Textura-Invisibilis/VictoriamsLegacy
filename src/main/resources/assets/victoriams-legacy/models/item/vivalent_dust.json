@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "victoriams-legacy:item/vivalent_dust"
+    "layer0": "vividological:item/vivalent_dust"
   }
 }
