@@ -1,11 +1,11 @@
 {
-  "parent": "minecraft:victoriams-legacy/get_raw_vivalent",
+  "parent": "minecraft:vividological/get_raw_vivalent",
   "criteria": {
     "got_vivalent_dust": {
       "conditions": {
         "items": [
           {
-            "items": "victoriams-legacy:vivalent_dust"
+            "items": "vividological:vivalent_dust"
           }
         ]
       },
@@ -17,7 +17,7 @@
     "description": "Crush Vivalent using an Anvil",
     "icon": {
       "count": 1,
-      "id": "victoriams-legacy:vivalent_dust"
+      "id": "vividological:vivalent_dust"
     },
     "title": "Powdered Crystals"
   },

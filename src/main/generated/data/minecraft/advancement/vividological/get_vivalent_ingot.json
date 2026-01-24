@@ -1,11 +1,11 @@
 {
-  "parent": "minecraft:victoriams-legacy/get_raw_vivalent",
+  "parent": "minecraft:vividological/get_raw_vivalent",
   "criteria": {
     "got_vivalent_ingot": {
       "conditions": {
         "items": [
           {
-            "items": "victoriams-legacy:vivalent_ingot"
+            "items": "vividological:vivalent_ingot"
           }
         ]
       },
@@ -18,7 +18,7 @@
     "frame": "goal",
     "icon": {
       "count": 1,
-      "id": "victoriams-legacy:vivalent_ingot"
+      "id": "vividological:vivalent_ingot"
     },
     "title": "An Alternative Metallic Substance for Weaponry Reasons"
   },
