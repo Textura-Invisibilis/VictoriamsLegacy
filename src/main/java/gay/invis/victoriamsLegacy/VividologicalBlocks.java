@@ -13,7 +13,7 @@ import net.minecraft.util.Identifier;
 public class VividologicalBlocks {
     public static Block register(Block block, String name, boolean shouldRegisterItem) {
         // Register the block and its item.
-        Identifier id = Identifier.of(VictoriamsLegacy.MOD_ID, name);
+        Identifier id = Identifier.of(Vividological.MOD_ID, name);
 
         // Sometimes, you may not want to register an item for the block.
         // Eg: if it's a technical block like `minecraft:air` or `minecraft:end_gateway`
@@ -32,7 +32,7 @@ public class VividologicalBlocks {
     );
 
     public static void initialize() {
-        ItemGroupEvents.modifyEntriesEvent(VictoriamsLegacyItems.CUSTOM_ITEM_GROUP_KEY).register((itemGroup) -> {
+        ItemGroupEvents.modifyEntriesEvent(VividologicalItems.CUSTOM_ITEM_GROUP_KEY).register((itemGroup) -> {
             itemGroup.add(VividologicalBlocks.COMPACTED_VIVALENT.asItem());
         });
     }

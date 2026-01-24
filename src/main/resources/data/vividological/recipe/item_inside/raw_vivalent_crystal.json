@@ -1,0 +1,21 @@
+{
+  "type": "lychee:item_inside",
+  "item_in": [{
+      "item": "emerald"
+    },
+    {
+      "item": "slime_ball"
+    },
+    {
+      "item": "glow_berries"
+    },
+    {
+      "item": "experience_bottle"
+    }],
+  "block_in": "water_cauldron[level=3]",
+  "post": [
+    "drop vividological:raw_vivalent_crystal",
+    "place cauldron"
+  ],
+  "time": 3
+}

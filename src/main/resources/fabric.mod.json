@@ -11,13 +11,13 @@
   "environment": "*",
   "entrypoints": {
     "fabric-datagen": [
-      "gay.invis.victoriamsLegacy.client.VictoriamsLegacyDataGenerator"
+      "gay.invis.victoriamsLegacy.client.VividologicalDataGenerator"
     ],
     "client": [
-      "gay.invis.victoriamsLegacy.client.VictoriamsLegacyClient"
+      "gay.invis.victoriamsLegacy.client.VividologicalClient"
     ],
     "main": [
-      "gay.invis.victoriamsLegacy.VictoriamsLegacy"
+      "gay.invis.victoriamsLegacy.Vividological"
     ]
   },
   "mixins": [

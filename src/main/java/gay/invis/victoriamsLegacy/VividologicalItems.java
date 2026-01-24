@@ -13,10 +13,10 @@ import net.minecraft.registry.RegistryKey;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
-public class VictoriamsLegacyItems {
+public class VividologicalItems {
         public static Item register(Item item, String id) {
             // Create the identifier for the item.
-            Identifier itemID = Identifier.of(VictoriamsLegacy.MOD_ID, id);
+            Identifier itemID = Identifier.of(Vividological.MOD_ID, id);
 
             // Register the item.
             Item registeredItem = Registry.register(Registries.ITEM, itemID, item);
@@ -41,6 +41,10 @@ public class VictoriamsLegacyItems {
             new Item(new Item.Settings()),
             "vivalent_dust"
     );
+    public static final Item CRYSTALLINE_COMPOUND = register(
+            new Item(new Item.Settings()),
+            "crystalline_compound"
+    );
     public static final Item VIVALENT_INGOT = register(
             new Item(new Item.Settings()),
             "vivalent_ingot"
@@ -53,10 +57,14 @@ public class VictoriamsLegacyItems {
             new SwordItem(VivalenticToolMaterial.INSTANCE, new Item.Settings()),
             "vivalentic_glaive"
     );
+    public static final Item SHROUDED_STEEL_INGOT = register(
+            new Item(new Item.Settings()),
+            "shrouded_steel_ingot"
+    );
 
-    public static final RegistryKey<ItemGroup> CUSTOM_ITEM_GROUP_KEY = RegistryKey.of(Registries.ITEM_GROUP.getKey(), Identifier.of(VictoriamsLegacy.MOD_ID, "item_group"));
+    public static final RegistryKey<ItemGroup> CUSTOM_ITEM_GROUP_KEY = RegistryKey.of(Registries.ITEM_GROUP.getKey(), Identifier.of(Vividological.MOD_ID, "item_group"));
     public static final ItemGroup CUSTOM_ITEM_GROUP = FabricItemGroup.builder()
-            .icon(() -> new ItemStack(VictoriamsLegacyItems.VIVALENT_INGOT))
+            .icon(() -> new ItemStack(VividologicalItems.VIVALENT_INGOT))
             .displayName(Text.translatable("itemGroup.vividological"))
             .build();
 
@@ -68,11 +76,11 @@ public class VictoriamsLegacyItems {
 
 // Register items to the custom item group.
         ItemGroupEvents.modifyEntriesEvent(CUSTOM_ITEM_GROUP_KEY).register(itemGroup -> {
-            itemGroup.add(VictoriamsLegacyItems.VIVALENT_DUST);
-            itemGroup.add(VictoriamsLegacyItems.VIVALENT_INGOT);
-            itemGroup.add(VictoriamsLegacyItems.DUSTED_EYE);
-            itemGroup.add(VictoriamsLegacyItems.RAW_VIVALENT_CRYSTAL);
-            itemGroup.add(VictoriamsLegacyItems.VIVALENTIC_GLAIVE);
+            itemGroup.add(VividologicalItems.VIVALENT_DUST);
+            itemGroup.add(VividologicalItems.VIVALENT_INGOT);
+            itemGroup.add(VividologicalItems.DUSTED_EYE);
+            itemGroup.add(VividologicalItems.RAW_VIVALENT_CRYSTAL);
+            itemGroup.add(VividologicalItems.VIVALENTIC_GLAIVE);
             // ...
         });
 

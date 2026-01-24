@@ -1,6 +1,6 @@
 package gay.invis.victoriamsLegacy.toolMaterials;
 
-import gay.invis.victoriamsLegacy.VictoriamsLegacyItems;
+import gay.invis.victoriamsLegacy.VividologicalItems;
 import net.minecraft.block.Block;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
@@ -25,7 +25,7 @@ public class VivalenticToolMaterial implements ToolMaterial {
         return 25;
     }
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(VictoriamsLegacyItems.VIVALENT_INGOT);
+        return Ingredient.ofItems(VividologicalItems.VIVALENT_INGOT);
     }
 
     public static final VivalenticToolMaterial INSTANCE = new VivalenticToolMaterial();
