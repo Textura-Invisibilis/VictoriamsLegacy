@@ -1,8 +1,8 @@
-# Victoriam's Legacy
+# Vividological
 
 Weaponry, tools, foods, trees, and capitalism! Made for Failed Voyage SMP.
 
-Victoriam's Legacy is a work-in-progress mod for **Fabric 1.21.1** adding new materials, new weapons and tools, new foods, and ways to create an economy.
+Vividological is a work-in-progress mod for **Fabric 1.21.1** adding new materials, new weapons and tools, new foods, and ways to create an economy.
 
 There's no guidebook (yet), so \[insert recipe viewer of choice here] will be your friend!
 
