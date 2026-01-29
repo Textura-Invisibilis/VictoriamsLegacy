@@ -4,7 +4,12 @@
   "item.vividological.vivalent_ingot": "Vivalentic Alloy",
   "item.vividological.dusted_eye": "Vivid Eye",
   "item.vividological.vivalentic_glaive": "Vivalentic Glaive",
+  "itemTooltip.vividological.vivalentic_glaive_1": "A weapon from a more civilised age.",
+  "itemTooltip.vividological.vivalentic_glaive_2": "What was its purpose...?",
   "itemGroup.vividological": "Vividological",
   "block.vividological.compacted_vivalent": "Compacted Vivalent",
-  "item.vividological.shrouded_steel_ingot": "Shrouded Steel Ingot"
+  "item.vividological.shrouded_steel_ingot": "Shrouded Steel Ingot",
+  "item.vividological.vivalent_cleaver": "Vivalent Cleaver",
+  "itemTooltip.vividological.vivalent_cleaver_1": "A ceremonial tool rarely used in combat.",
+  "itemTooltip.vividological.vivalent_cleaver_2": "Seems to be just decorative."
 }

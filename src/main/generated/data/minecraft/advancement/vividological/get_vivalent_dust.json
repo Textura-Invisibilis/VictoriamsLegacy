@@ -14,7 +14,7 @@
   },
   "display": {
     "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
-    "description": "Crush Vivalent using an Anvil",
+    "description": "You shouldn't eat these",
     "icon": {
       "count": 1,
       "id": "vividological:vivalent_dust"

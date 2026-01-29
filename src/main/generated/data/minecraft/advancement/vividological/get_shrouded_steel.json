@@ -1,11 +1,11 @@
 {
-  "parent": "minecraft:vividological/get_raw_vivalent",
+  "parent": "minecraft:vividological/vividological_advancement_starter",
   "criteria": {
-    "got_vivalent_ingot": {
+    "got_shrouded_steel": {
       "conditions": {
         "items": [
           {
-            "items": "vividological:vivalent_ingot"
+            "items": "vividological:shrouded_steel_ingot"
           }
         ]
       },
@@ -14,17 +14,16 @@
   },
   "display": {
     "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
-    "description": "Process Vivalent into a brand new alloy!",
-    "frame": "goal",
+    "description": "Create a material of stealth",
     "icon": {
       "count": 1,
-      "id": "vividological:vivalent_ingot"
+      "id": "vividological:shrouded_steel_ingot"
     },
-    "title": "An Alternative Metallic Substance for Weaponry Reasons"
+    "title": "Forged Material of a Quiet Variety"
   },
   "requirements": [
     [
-      "got_vivalent_ingot"
+      "got_shrouded_steel"
     ]
   ],
   "sends_telemetry_event": true

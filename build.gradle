@@ -79,6 +79,7 @@ dependencies {
     modImplementation("me.shedaniel.cloth:cloth-config-fabric:15.0.140") {
         exclude(group: "net.fabricmc.fabric-api")
     }
+    modImplementation(files("libs/tweakfailure-1.0.1.jar"))
 }
 
 processResources {

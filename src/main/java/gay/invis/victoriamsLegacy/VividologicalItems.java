@@ -1,5 +1,6 @@
 package gay.invis.victoriamsLegacy;
 
+import gay.invis.victoriamsLegacy.importantTools.VivalenticGlaive;
 import gay.invis.victoriamsLegacy.toolMaterials.VivalenticToolMaterial;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -12,6 +13,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Rarity;
 
 public class VividologicalItems {
         public static Item register(Item item, String id) {
@@ -27,7 +29,7 @@ public class VividologicalItems {
 
     public static final FoodComponent VIVID_EYE_FOOD_COMPONENT_THING = new FoodComponent.Builder()
             .nutrition(8)
-            .saturationModifier(20)
+            .saturationModifier(14)
             // The duration is in ticks, 20 ticks = 1 second
             .statusEffect(new StatusEffectInstance(StatusEffects.BLINDNESS, 10 * 20), 1.0f)
             .statusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS, 6 * 20), 1.0f)
@@ -53,14 +55,15 @@ public class VividologicalItems {
       new Item(new Item.Settings().food(VIVID_EYE_FOOD_COMPONENT_THING)),
             "dusted_eye"
     );
-    public static final Item VIVALENTIC_GLAIVE = register(
-            new SwordItem(VivalenticToolMaterial.INSTANCE, new Item.Settings()),
-            "vivalentic_glaive"
-    );
     public static final Item SHROUDED_STEEL_INGOT = register(
             new Item(new Item.Settings()),
             "shrouded_steel_ingot"
     );
+    public static final Item VIVALENTIC_GLAIVE = register(new VivalenticGlaive(VivalenticToolMaterial.INSTANCE,
+                    new Item.Settings().maxCount(1).rarity(Rarity.RARE)
+                            .attributeModifiers(SwordItem.createAttributeModifiers(VivalenticToolMaterial.INSTANCE, 4, -2.7f))),
+            "vivalentic_glaive"
+            );
 
     public static final RegistryKey<ItemGroup> CUSTOM_ITEM_GROUP_KEY = RegistryKey.of(Registries.ITEM_GROUP.getKey(), Identifier.of(Vividological.MOD_ID, "item_group"));
     public static final ItemGroup CUSTOM_ITEM_GROUP = FabricItemGroup.builder()
@@ -80,7 +83,6 @@ public class VividologicalItems {
             itemGroup.add(VividologicalItems.VIVALENT_INGOT);
             itemGroup.add(VividologicalItems.DUSTED_EYE);
             itemGroup.add(VividologicalItems.RAW_VIVALENT_CRYSTAL);
-            itemGroup.add(VividologicalItems.VIVALENTIC_GLAIVE);
             // ...
         });
 

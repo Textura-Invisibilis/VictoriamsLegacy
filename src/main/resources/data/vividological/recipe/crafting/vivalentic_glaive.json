@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  g",
+    " gc",
+    "sc "
+  ],
+  "key": {
+    "g": {
+      "item": "vividological:vivalent_ingot"
+    },
+    "c": {
+      "item": "vividological:raw_vivalent_crystal"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "id": "vividological:vivalentic_glaive",
+    "count": 1
+  }
+}

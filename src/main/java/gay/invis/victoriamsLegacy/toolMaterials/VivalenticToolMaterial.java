@@ -10,19 +10,19 @@ import net.minecraft.registry.tag.TagKey;
 public class VivalenticToolMaterial implements ToolMaterial {
     @Override
     public int getDurability() {
-        return 2045;
+        return 1656;
     }
     public float getMiningSpeedMultiplier() {
-        return 5.0f;
+        return 6.87f;
     }
     public float getAttackDamage() {
-        return 2.0f;
+        return 4.0f;
     }
     public TagKey<Block> getInverseTag() {
         return BlockTags.INCORRECT_FOR_IRON_TOOL;
     }
     public int getEnchantability() {
-        return 25;
+        return 15;
     }
     public Ingredient getRepairIngredient() {
         return Ingredient.ofItems(VividologicalItems.VIVALENT_INGOT);

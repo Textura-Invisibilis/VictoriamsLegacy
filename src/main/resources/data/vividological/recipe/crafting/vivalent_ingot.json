@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ggg",
+    "gVc",
+    "ccc"
+  ],
+  "key": {
+    "g": {
+      "item": "minecraft:gold_ingot"
+    },
+    "V": {
+      "item": "vividological:raw_vivalent_crystal"
+    },
+    "c": {
+      "item": "minecraft:copper_ingot"
+    }
+  },
+  "result": {
+    "id": "vividological:vivalent_ingot",
+    "count": 1
+  }
+}

@@ -1,11 +1,11 @@
 {
-  "parent": "minecraft:vividological/get_raw_vivalent",
+  "parent": "minecraft:vividological/get_vivalent_ingot",
   "criteria": {
-    "got_vivalent_ingot": {
+    "got_vivalentic_glaive": {
       "conditions": {
         "items": [
           {
-            "items": "vividological:vivalent_ingot"
+            "items": "vividological:vivalentic_glaive"
           }
         ]
       },
@@ -14,17 +14,16 @@
   },
   "display": {
     "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
-    "description": "Process Vivalent into a brand new alloy!",
-    "frame": "goal",
+    "description": "Craft a Vivalentic Glaive",
     "icon": {
       "count": 1,
-      "id": "vividological:vivalent_ingot"
+      "id": "vividological:vivalentic_glaive"
     },
-    "title": "An Alternative Metallic Substance for Weaponry Reasons"
+    "title": "Naturally Dangerous"
   },
   "requirements": [
     [
-      "got_vivalent_ingot"
+      "got_vivalentic_glaive"
     ]
   ],
   "sends_telemetry_event": true
