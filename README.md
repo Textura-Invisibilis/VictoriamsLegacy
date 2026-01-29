@@ -8,3 +8,5 @@ There's no guidebook (yet), so \[insert recipe viewer of choice here] will be yo
 
 Depends on [Trinkets](https://github.com/emilyploszaj/trinkets), Lychee, and Fabric API.
 
+Contains optional integration with [Tweakfailure](https://github.com/Chemthunder/tweakfailure-1.21.1)
+
