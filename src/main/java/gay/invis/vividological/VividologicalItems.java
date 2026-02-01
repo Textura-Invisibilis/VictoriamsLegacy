@@ -1,7 +1,8 @@
-package gay.invis.victoriamsLegacy;
+package gay.invis.vividological;
 
-import gay.invis.victoriamsLegacy.importantTools.VivalenticGlaive;
-import gay.invis.victoriamsLegacy.toolMaterials.VivalenticToolMaterial;
+import gay.invis.vividological.importantTools.ViviniticGlaive;
+import gay.invis.vividological.toolMaterials.ViviniteToolMaterial;
+import gay.invis.vividological.tooltips.ViviniteCrystal;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.component.type.FoodComponent;
@@ -35,21 +36,21 @@ public class VividologicalItems {
             .statusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS, 6 * 20), 1.0f)
             .build();
 
-    public static final Item RAW_VIVALENT_CRYSTAL = register(
+    public static final Item RAW_VIVINITE_CRYSTAL = register(
             new Item(new Item.Settings()),
-            "raw_vivalent_crystal"
+            "raw_vivinite_crystal"
     );
-    public static final Item VIVALENT_DUST = register(
+    public static final Item VIVINITE_DUST = register(
             new Item(new Item.Settings()),
-            "vivalent_dust"
+            "vivinite_dust"
     );
     public static final Item CRYSTALLINE_COMPOUND = register(
             new Item(new Item.Settings()),
             "crystalline_compound"
     );
-    public static final Item VIVALENT_INGOT = register(
-            new Item(new Item.Settings()),
-            "vivalent_ingot"
+    public static final Item VIVINITE_INGOT = register(
+            new ViviniteCrystal(new Item.Settings()),
+            "vivinite_ingot"
     );
     public static final Item DUSTED_EYE = register(
       new Item(new Item.Settings().food(VIVID_EYE_FOOD_COMPONENT_THING)),
@@ -59,15 +60,15 @@ public class VividologicalItems {
             new Item(new Item.Settings()),
             "shrouded_steel_ingot"
     );
-    public static final Item VIVALENTIC_GLAIVE = register(new VivalenticGlaive(VivalenticToolMaterial.INSTANCE,
+    public static final Item VIVINITIC_GLAIVE = register(new ViviniticGlaive(ViviniteToolMaterial.INSTANCE,
                     new Item.Settings().maxCount(1).rarity(Rarity.RARE)
-                            .attributeModifiers(SwordItem.createAttributeModifiers(VivalenticToolMaterial.INSTANCE, 4, -2.7f))),
-            "vivalentic_glaive"
+                            .attributeModifiers(SwordItem.createAttributeModifiers(ViviniteToolMaterial.INSTANCE, 4, -2.7f))),
+            "vivinitic_glaive"
             );
 
     public static final RegistryKey<ItemGroup> CUSTOM_ITEM_GROUP_KEY = RegistryKey.of(Registries.ITEM_GROUP.getKey(), Identifier.of(Vividological.MOD_ID, "item_group"));
     public static final ItemGroup CUSTOM_ITEM_GROUP = FabricItemGroup.builder()
-            .icon(() -> new ItemStack(VividologicalItems.VIVALENT_INGOT))
+            .icon(() -> new ItemStack(VividologicalItems.VIVINITE_INGOT))
             .displayName(Text.translatable("itemGroup.vividological"))
             .build();
 
@@ -79,10 +80,10 @@ public class VividologicalItems {
 
 // Register items to the custom item group.
         ItemGroupEvents.modifyEntriesEvent(CUSTOM_ITEM_GROUP_KEY).register(itemGroup -> {
-            itemGroup.add(VividologicalItems.VIVALENT_DUST);
-            itemGroup.add(VividologicalItems.VIVALENT_INGOT);
+            itemGroup.add(VividologicalItems.VIVINITE_DUST);
+            itemGroup.add(VividologicalItems.VIVINITE_INGOT);
             itemGroup.add(VividologicalItems.DUSTED_EYE);
-            itemGroup.add(VividologicalItems.RAW_VIVALENT_CRYSTAL);
+            itemGroup.add(VividologicalItems.RAW_VIVINITE_CRYSTAL);
             // ...
         });
 

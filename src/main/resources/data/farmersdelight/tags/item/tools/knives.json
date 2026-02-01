@@ -1,0 +1,11 @@
+{
+  "replace": "false",
+  "values": [
+    "tweakfailure:flint_cleaver",
+    "tweakfailure:iron_cleaver",
+    "tweakfailure:diamond_cleaver",
+    "tweakfailure:golden_cleaver",
+    "tweakfailure:netherite_cleaver",
+    "vividological:vivinite_cleaver"
+  ]
+}

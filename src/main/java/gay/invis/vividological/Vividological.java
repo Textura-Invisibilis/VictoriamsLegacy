@@ -1,6 +1,6 @@
-package gay.invis.victoriamsLegacy;
+package gay.invis.vividological;
 
-import gay.invis.victoriamsLegacy.compat.VividologicalTweakfailureCompat;
+import gay.invis.vividological.compat.VividologicalTweakfailureCompat;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.loader.api.FabricLoader;
 import org.slf4j.Logger;
@@ -12,11 +12,13 @@ public class Vividological implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        LOGGER.info("The nation of New Victoriam rides high with the power of new things to tinker with!");
         VividologicalItems.initialize();
         VividologicalBlocks.initialize();
         if (FabricLoader.getInstance().isModLoaded("tweakfailure")) {
             VividologicalTweakfailureCompat.initialize();
+            LOGGER.info("Tweakfailure, you've gained a new friend!");
+        } else {
+            LOGGER.info("<< This mod is incomplete. Maybe try failing to tweak something?");
         }
     }
 }

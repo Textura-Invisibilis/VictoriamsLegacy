@@ -1,13 +1,13 @@
-package gay.invis.victoriamsLegacy.toolMaterials;
+package gay.invis.vividological.toolMaterials;
 
-import gay.invis.victoriamsLegacy.VividologicalItems;
+import gay.invis.vividological.VividologicalItems;
 import net.minecraft.block.Block;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.registry.tag.TagKey;
 
-public class VivalenticToolMaterial implements ToolMaterial {
+public class ViviniteToolMaterial implements ToolMaterial {
     @Override
     public int getDurability() {
         return 1656;
@@ -25,8 +25,8 @@ public class VivalenticToolMaterial implements ToolMaterial {
         return 15;
     }
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(VividologicalItems.VIVALENT_INGOT);
+        return Ingredient.ofItems(VividologicalItems.VIVINITE_INGOT);
     }
 
-    public static final VivalenticToolMaterial INSTANCE = new VivalenticToolMaterial();
+    public static final ViviniteToolMaterial INSTANCE = new ViviniteToolMaterial();
 }

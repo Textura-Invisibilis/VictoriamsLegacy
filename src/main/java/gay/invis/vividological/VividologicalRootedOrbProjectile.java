@@ -1,12 +1,10 @@
-package gay.invis.victoriamsLegacy;
+package gay.invis.vividological;
 
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.projectile.thrown.ThrownItemEntity;
 import net.minecraft.item.Item;
 import net.minecraft.world.World;
-import net.minecraft.item.BowItem;
-import net.minecraft.item.EggItem;
 
 public class VividologicalRootedOrbProjectile extends ThrownItemEntity {
     public VividologicalRootedOrbProjectile(EntityType<? extends ThrownItemEntity> entityType, World world) {

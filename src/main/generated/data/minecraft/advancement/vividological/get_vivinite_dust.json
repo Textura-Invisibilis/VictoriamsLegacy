@@ -1,11 +1,11 @@
 {
-  "parent": "minecraft:vividological/get_vivalent_ingot",
+  "parent": "minecraft:vividological/get_raw_vivinite",
   "criteria": {
-    "got_vivalentic_glaive": {
+    "got_vivinite_dust": {
       "conditions": {
         "items": [
           {
-            "items": "vividological:vivalentic_glaive"
+            "items": "vividological:vivinite_dust"
           }
         ]
       },
@@ -14,16 +14,16 @@
   },
   "display": {
     "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
-    "description": "Craft a Vivalentic Glaive",
+    "description": "You shouldn't eat these",
     "icon": {
       "count": 1,
-      "id": "vividological:vivalentic_glaive"
+      "id": "vividological:vivinite_dust"
     },
-    "title": "Naturally Dangerous"
+    "title": "Powdered Crystals"
   },
   "requirements": [
     [
-      "got_vivalentic_glaive"
+      "got_vivinite_dust"
     ]
   ],
   "sends_telemetry_event": true

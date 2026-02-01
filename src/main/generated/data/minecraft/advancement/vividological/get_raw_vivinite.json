@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:vividological/vividological_advancement_starter",
   "criteria": {
-    "got_raw_vivalent": {
+    "got_raw_vivinite": {
       "conditions": {
         "items": [
           {
-            "items": "vividological:raw_vivalent_crystal"
+            "items": "vividological:raw_vivinite_crystal"
           }
         ]
       },
@@ -17,13 +17,13 @@
     "description": "Do some chemical experiments and manufacture a new mineral",
     "icon": {
       "count": 1,
-      "id": "vividological:raw_vivalent_crystal"
+      "id": "vividological:raw_vivinite_crystal"
     },
     "title": "Crystalline Reconstruction"
   },
   "requirements": [
     [
-      "got_raw_vivalent"
+      "got_raw_vivinite"
     ]
   ],
   "sends_telemetry_event": true

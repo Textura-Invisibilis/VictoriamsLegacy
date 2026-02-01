@@ -1,6 +1,5 @@
-package gay.invis.victoriamsLegacy;
+package gay.invis.vividological;
 
-import gay.invis.victoriamsLegacy.compat.VividologicalTweakfailureCompat;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricAdvancementProvider;
 import net.minecraft.advancement.Advancement;
@@ -37,10 +36,10 @@ public class VividologicalAdvancementProvider extends FabricAdvancementProvider 
                 .criterion("vividological_advancement_tree", InventoryChangedCriterion.Conditions.items(Items.QUARTZ))
                 // Give the advancement an id
                 .build(consumer, Vividological.MOD_ID + "/vividological_advancement_starter");
-        AdvancementEntry getRawVivalent = Advancement.Builder.create()
+        AdvancementEntry getRawVivinite = Advancement.Builder.create()
                 .parent(treeBeginner)
                 .display(
-                        VividologicalItems.RAW_VIVALENT_CRYSTAL, // The display icon
+                        VividologicalItems.RAW_VIVINITE_CRYSTAL, // The display icon
                         Text.literal("Crystalline Reconstruction"), // The title
                         Text.literal("Do some chemical experiments and manufacture a new mineral"), // The description
                         Identifier.ofVanilla("textures/gui/advancements/backgrounds/adventure.png"), // Background image for the tab in the advancements page, if this is a root advancement (has no parent)
@@ -50,9 +49,9 @@ public class VividologicalAdvancementProvider extends FabricAdvancementProvider 
                         false // Hide it in the advancement tab until it's achieved
                 )
                 // "got_dirt" is the name referenced by other advancements when they want to have "requirements."
-                .criterion("got_raw_vivalent", InventoryChangedCriterion.Conditions.items(VividologicalItems.RAW_VIVALENT_CRYSTAL))
+                .criterion("got_raw_vivinite", InventoryChangedCriterion.Conditions.items(VividologicalItems.RAW_VIVINITE_CRYSTAL))
                 // Give the advancement an id
-                .build(consumer, Vividological.MOD_ID + "/get_raw_vivalent");
+                .build(consumer, Vividological.MOD_ID + "/get_raw_vivinite");
         AdvancementEntry getShroudedSteel = Advancement.Builder.create()
                 .parent(treeBeginner)
                 .display(
@@ -69,12 +68,12 @@ public class VividologicalAdvancementProvider extends FabricAdvancementProvider 
                 .criterion("got_shrouded_steel", InventoryChangedCriterion.Conditions.items(VividologicalItems.SHROUDED_STEEL_INGOT))
                 // Give the advancement an id
                 .build(consumer, Vividological.MOD_ID + "/get_shrouded_steel");
-        AdvancementEntry processVivalent = Advancement.Builder.create()
-                .parent(getRawVivalent)
+        AdvancementEntry processVivinite = Advancement.Builder.create()
+                .parent(getRawVivinite)
                 .display(
-                        VividologicalItems.VIVALENT_INGOT, // The display icon
+                        VividologicalItems.VIVINITE_INGOT, // The display icon
                         Text.literal("An Alternative Metallic Substance for Weaponry Reasons"), // The title
-                        Text.literal("Process Vivalent into a brand new alloy!"), // The description
+                        Text.literal("Process Vivinite into a brand new alloy!"), // The description
                         Identifier.ofVanilla("textures/gui/advancements/backgrounds/adventure.png"), // Background image for the tab in the advancements page, if this is a root advancement (has no parent)
                         AdvancementFrame.GOAL, // TASK, CHALLENGE, or GOAL
                         true, // Show the toast when completing it
@@ -82,13 +81,13 @@ public class VividologicalAdvancementProvider extends FabricAdvancementProvider 
                         false // Hide it in the advancement tab until it's achieved
                 )
                 // "got_dirt" is the name referenced by other advancements when they want to have "requirements."
-                .criterion("got_vivalent_ingot", InventoryChangedCriterion.Conditions.items(VividologicalItems.VIVALENT_INGOT))
+                .criterion("got_vivinite_ingot", InventoryChangedCriterion.Conditions.items(VividologicalItems.VIVINITE_INGOT))
                 // Give the advancement an id
-                .build(consumer, Vividological.MOD_ID + "/get_vivalent_ingot");
-        AdvancementEntry crushedVivalent = Advancement.Builder.create()
-                .parent(getRawVivalent)
+                .build(consumer, Vividological.MOD_ID + "/get_vivinite_ingot");
+        AdvancementEntry crushedVivinite = Advancement.Builder.create()
+                .parent(getRawVivinite)
                 .display(
-                        VividologicalItems.VIVALENT_DUST, // The display icon
+                        VividologicalItems.VIVINITE_DUST, // The display icon
                         Text.literal("Powdered Crystals"), // The title
                         Text.literal("You shouldn't eat these"), // The description
                         Identifier.ofVanilla("textures/gui/advancements/backgrounds/adventure.png"), // Background image for the tab in the advancements page, if this is a root advancement (has no parent)
@@ -98,15 +97,15 @@ public class VividologicalAdvancementProvider extends FabricAdvancementProvider 
                         false // Hide it in the advancement tab until it's achieved
                 )
                 // "got_dirt" is the name referenced by other advancements when they want to have "requirements."
-                .criterion("got_vivalent_dust", InventoryChangedCriterion.Conditions.items(VividologicalItems.VIVALENT_DUST))
+                .criterion("got_vivinite_dust", InventoryChangedCriterion.Conditions.items(VividologicalItems.VIVINITE_DUST))
                 // Give the advancement an id
-                .build(consumer, Vividological.MOD_ID + "/get_vivalent_dust");
-        AdvancementEntry getVivalenticGlaive = Advancement.Builder.create()
-                .parent(processVivalent)
+                .build(consumer, Vividological.MOD_ID + "/get_vivinite_dust");
+        AdvancementEntry getViviniticGlaive = Advancement.Builder.create()
+                .parent(processVivinite)
                 .display(
-                        VividologicalItems.VIVALENTIC_GLAIVE, // The display icon
+                        VividologicalItems.VIVINITIC_GLAIVE, // The display icon
                         Text.literal("Naturally Dangerous"), // The title
-                        Text.literal("Craft a Vivalentic Glaive"), // The description
+                        Text.literal("Craft a Vivinitic Glaive"), // The description
                         Identifier.ofVanilla("textures/gui/advancements/backgrounds/adventure.png"), // Background image for the tab in the advancements page, if this is a root advancement (has no parent)
                         AdvancementFrame.TASK, // TASK, CHALLENGE, or GOAL
                         true, // Show the toast when completing it
@@ -114,9 +113,9 @@ public class VividologicalAdvancementProvider extends FabricAdvancementProvider 
                         false // Hide it in the advancement tab until it's achieved
                 )
                 // "got_dirt" is the name referenced by other advancements when they want to have "requirements."
-                .criterion("got_vivalentic_glaive", InventoryChangedCriterion.Conditions.items(VividologicalItems.VIVALENTIC_GLAIVE))
+                .criterion("got_vivinitic_glaive", InventoryChangedCriterion.Conditions.items(VividologicalItems.VIVINITIC_GLAIVE))
                 // Give the advancement an id
-                .build(consumer, Vividological.MOD_ID + "/get_vivalentic_glaive");
+                .build(consumer, Vividological.MOD_ID + "/get_vivinitic_glaive");
 //        AdvancementEntry getVivalentCleaver = Advancement.Builder.create()
 //                .parent(processVivalent)
 //                .display(

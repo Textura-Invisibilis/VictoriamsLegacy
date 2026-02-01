@@ -4,26 +4,26 @@
   "version": "${version}",
   "name": "Vividological",
   "description": "Cool materials! Deadly weapons! Funky trees! Stupid food! And more!!",
-  "authors": ["The Nation of New Victoriam"],
+  "authors": ["{sys:Erisatis}  (code), Dread (textures), Hayes (ideas), Sue (ideas), KindlingCinder (textures we recolored for compat reasons)"],
   "contact": {},
-  "license": "All-Rights-Reserved",
-  "icon": "assets/victoriams-legacy/icon.png",
+  "license": "WTFPL",
+  "icon": "assets/vividological/icon.png",
   "environment": "*",
   "entrypoints": {
     "fabric-datagen": [
-      "gay.invis.victoriamsLegacy.client.VividologicalDataGenerator"
+      "gay.invis.vividological.client.VividologicalDataGenerator"
     ],
     "client": [
-      "gay.invis.victoriamsLegacy.client.VividologicalClient"
+      "gay.invis.vividological.client.VividologicalClient"
     ],
     "main": [
-      "gay.invis.victoriamsLegacy.Vividological"
+      "gay.invis.vividological.Vividological"
     ]
   },
   "mixins": [
-    "victoriams-legacy.mixins.json",
+    "vividological.mixins.json",
     {
-      "config": "victoriams-legacy.client.mixins.json",
+      "config": "vividological.client.mixins.json",
       "environment": "client"
     }
   ],

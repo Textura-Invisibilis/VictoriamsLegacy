@@ -1,4 +1,4 @@
-package gay.invis.victoriamsLegacy.client;
+package gay.invis.vividological.client;
 
 import net.fabricmc.api.ClientModInitializer;
 

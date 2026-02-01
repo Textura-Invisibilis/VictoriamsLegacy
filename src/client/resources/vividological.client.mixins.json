@@ -1,7 +1,7 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "gay.invis.victoriamsLegacy.mixin.client",
+  "package": "gay.invis.vividological.mixin.client",
   "compatibilityLevel": "JAVA_21",
   "client": [
   ],

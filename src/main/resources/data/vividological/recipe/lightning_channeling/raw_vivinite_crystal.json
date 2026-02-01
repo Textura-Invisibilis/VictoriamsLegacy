@@ -1,10 +1,7 @@
 {
   "type": "lychee:lightning_channeling",
   "item_in": [{
-      "item": "quartz"
-    },
-    {
-      "item": "moss_block"
+      "item": "emerald_ore"
     }],
   "post": [{
     "type": "drop_item",

@@ -1,4 +1,4 @@
-package gay.invis.victoriamsLegacy;
+package gay.invis.vividological;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
@@ -25,15 +25,15 @@ public class VividologicalBlocks {
         return Registry.register(Registries.BLOCK, id, block);
     }
 
-    public static final Block COMPACTED_VIVALENT = register(
+    public static final Block COMPACTED_VIVINITE = register(
             new Block(AbstractBlock.Settings.create().sounds(BlockSoundGroup.AMETHYST_BLOCK).requiresTool().hardness(2.0f)),
-            "compacted_vivalent",
+            "compacted_vivinite",
             true
     );
 
     public static void initialize() {
         ItemGroupEvents.modifyEntriesEvent(VividologicalItems.CUSTOM_ITEM_GROUP_KEY).register((itemGroup) -> {
-            itemGroup.add(VividologicalBlocks.COMPACTED_VIVALENT.asItem());
+            itemGroup.add(VividologicalBlocks.COMPACTED_VIVINITE.asItem());
         });
     }
 }

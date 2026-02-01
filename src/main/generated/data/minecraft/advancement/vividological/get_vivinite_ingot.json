@@ -1,11 +1,11 @@
 {
-  "parent": "minecraft:vividological/get_raw_vivalent",
+  "parent": "minecraft:vividological/get_raw_vivinite",
   "criteria": {
-    "got_vivalent_ingot": {
+    "got_vivinite_ingot": {
       "conditions": {
         "items": [
           {
-            "items": "vividological:vivalent_ingot"
+            "items": "vividological:vivinite_ingot"
           }
         ]
       },
@@ -14,17 +14,17 @@
   },
   "display": {
     "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
-    "description": "Process Vivalent into a brand new alloy!",
+    "description": "Process Vivinite into a brand new alloy!",
     "frame": "goal",
     "icon": {
       "count": 1,
-      "id": "vividological:vivalent_ingot"
+      "id": "vividological:vivinite_ingot"
     },
     "title": "An Alternative Metallic Substance for Weaponry Reasons"
   },
   "requirements": [
     [
-      "got_vivalent_ingot"
+      "got_vivinite_ingot"
     ]
   ],
   "sends_telemetry_event": true

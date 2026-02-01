@@ -1,4 +1,4 @@
-package gay.invis.victoriamsLegacy.compat;
+package gay.invis.vividological.compat;
 
 import net.kindling.impl.tweakfailure.item.CleaverItem;
 import net.minecraft.item.Item;
@@ -10,12 +10,16 @@ import net.minecraft.util.Formatting;
 
 import java.util.List;
 
-public class VivalentCleaver extends CleaverItem {
-    public VivalentCleaver(ToolMaterial toolMaterial, Item.Settings settings) {
+public class ViviniteCleaver extends CleaverItem {
+    public ViviniteCleaver(ToolMaterial toolMaterial, Item.Settings settings) {
         super(toolMaterial, settings);
     }
     public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
         tooltip.add(Text.translatable("itemTooltip.vividological.vivalent_cleaver_1").formatted(Formatting.DARK_PURPLE).formatted(Formatting.ITALIC));
         tooltip.add(Text.translatable("itemTooltip.vividological.vivalent_cleaver_2").formatted(Formatting.DARK_PURPLE).formatted(Formatting.ITALIC));
+    }
+    @Override
+    public Text getName(ItemStack stack) {
+        return super.getName(stack).copy().styled(style -> style.withColor(0xc7f069));
     }
 }

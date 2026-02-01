@@ -1,15 +1,17 @@
 {
-  "item.vividological.raw_vivalent_crystal": "Crystalline Vivalent",
-  "item.vividological.vivalent_dust": "Vivalent Dust",
-  "item.vividological.vivalent_ingot": "Vivalentic Alloy",
+  "item.vividological.raw_vivinite_crystal": "Crystalline Vivinite",
+  "itemTooltip.vividological.raw_vivinite_crystal_1": "It vibrates in your hand.",
+  "itemTooltip.vividological.raw_vivinite_crystal_2": "You feel as though this... shouldn't exist.",
+  "item.vividological.vivinite_dust": "Vivinite Dust",
+  "item.vividological.vivinite_ingot": "Vivinite Alloy",
   "item.vividological.dusted_eye": "Vivid Eye",
-  "item.vividological.vivalentic_glaive": "Vivalentic Glaive",
-  "itemTooltip.vividological.vivalentic_glaive_1": "A weapon from a more civilised age.",
-  "itemTooltip.vividological.vivalentic_glaive_2": "What was its purpose...?",
+  "item.vividological.vivinitic_glaive": "Vivinitic Glaive",
+  "itemTooltip.vividological.vivinitic_glaive_1": "A weapon from a more civilised age.",
+  "itemTooltip.vividological.vivinitic_glaive_2": "What was its purpose...?",
   "itemGroup.vividological": "Vividological",
-  "block.vividological.compacted_vivalent": "Compacted Vivalent",
+  "block.vividological.compacted_vivinite": "Compacted Vivinite",
   "item.vividological.shrouded_steel_ingot": "Shrouded Steel Ingot",
-  "item.vividological.vivalent_cleaver": "Vivalent Cleaver",
-  "itemTooltip.vividological.vivalent_cleaver_1": "A ceremonial tool rarely used in combat.",
-  "itemTooltip.vividological.vivalent_cleaver_2": "Seems to be just decorative."
+  "item.vividological.vivinite_cleaver": "Vivinite Cleaver",
+  "itemTooltip.vividological.vivinite_cleaver_1": "A ceremonial tool rarely used in combat.",
+  "itemTooltip.vividological.vivinite_cleaver_2": "Seems to be just decorative."
 }

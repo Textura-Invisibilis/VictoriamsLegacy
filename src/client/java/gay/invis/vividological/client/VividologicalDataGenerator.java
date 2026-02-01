@@ -1,6 +1,6 @@
-package gay.invis.victoriamsLegacy.client;
+package gay.invis.vividological.client;
 
-import gay.invis.victoriamsLegacy.VividologicalAdvancementProvider;
+import gay.invis.vividological.VividologicalAdvancementProvider;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 
