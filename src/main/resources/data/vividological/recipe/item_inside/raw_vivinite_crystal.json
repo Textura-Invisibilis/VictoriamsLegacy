@@ -14,7 +14,7 @@
     }],
   "block_in": "water_cauldron[level=3]",
   "post": [
-    "drop vividological:raw_vivalent_crystal",
+    "drop vividological:raw_vivinite_crystal",
     "place cauldron"
   ],
   "time": 3

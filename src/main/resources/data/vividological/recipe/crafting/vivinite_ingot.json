@@ -10,14 +10,14 @@
       "item": "minecraft:gold_ingot"
     },
     "V": {
-      "item": "vividological:raw_vivalent_crystal"
+      "item": "vividological:raw_vivinite_crystal"
     },
     "c": {
       "item": "minecraft:copper_ingot"
     }
   },
   "result": {
-    "id": "vividological:vivalent_ingot",
+    "id": "vividological:vivinite_ingot",
     "count": 1
   }
 }

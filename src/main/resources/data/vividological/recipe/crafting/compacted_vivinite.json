@@ -6,11 +6,11 @@
   ],
   "key": {
     "#": {
-      "item": "vividological:raw_vivalent_crystal"
+      "item": "vividological:raw_vivinite_crystal"
     }
   },
   "result": {
-    "id": "vividological:compacted_vivalent",
+    "id": "vividological:compacted_vivinite",
     "count": 1
   }
 }

@@ -1,5 +1,5 @@
 {
     "type": "lychee:block_crushing",
-    "item_in": "vividological:raw_vivalent_crystal",
-    "post": "drop vividological:vivalent_dust"
+    "item_in": "vividological:raw_vivinite_crystal",
+    "post": "drop vividological:vivinite_dust"
 }

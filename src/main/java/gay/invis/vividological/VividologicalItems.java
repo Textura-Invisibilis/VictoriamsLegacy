@@ -37,7 +37,7 @@ public class VividologicalItems {
             .build();
 
     public static final Item RAW_VIVINITE_CRYSTAL = register(
-            new Item(new Item.Settings()),
+            new ViviniteCrystal(new Item.Settings()),
             "raw_vivinite_crystal"
     );
     public static final Item VIVINITE_DUST = register(
@@ -49,7 +49,7 @@ public class VividologicalItems {
             "crystalline_compound"
     );
     public static final Item VIVINITE_INGOT = register(
-            new ViviniteCrystal(new Item.Settings()),
+            new Item(new Item.Settings()),
             "vivinite_ingot"
     );
     public static final Item DUSTED_EYE = register(

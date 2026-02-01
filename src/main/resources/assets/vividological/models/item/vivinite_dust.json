@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "vividological:item/raw_vivalent_crystal"
+    "layer0": "vividological:item/vivinite_dust"
   }
 }

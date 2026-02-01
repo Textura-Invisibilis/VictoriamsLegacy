@@ -7,14 +7,14 @@
   ],
   "key": {
     "g": {
-      "item": "vividological:vivalent_ingot"
+      "item": "vividological:vivinite_ingot"
     },
     "s": {
       "item": "minecraft:stick"
     }
   },
   "result": {
-    "id": "vividological:vivalent_cleaver",
+    "id": "vividological:vivinite_cleaver",
     "count": 1
   }
 }

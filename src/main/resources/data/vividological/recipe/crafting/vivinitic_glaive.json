@@ -7,17 +7,17 @@
   ],
   "key": {
     "g": {
-      "item": "vividological:vivalent_ingot"
+      "item": "vividological:vivinite_ingot"
     },
     "c": {
-      "item": "vividological:raw_vivalent_crystal"
+      "item": "vividological:raw_vivinite_crystal"
     },
     "s": {
       "item": "minecraft:stick"
     }
   },
   "result": {
-    "id": "vividological:vivalentic_glaive",
+    "id": "vividological:vivinitic_glaive",
     "count": 1
   }
 }
