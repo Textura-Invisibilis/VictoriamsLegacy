@@ -31,9 +31,15 @@ public class VividologicalBlocks {
             true
     );
 
+//    public static final Block ESOTERIC_MIXTURE = register(
+//            new Block(AbstractBlock.Settings.create().sounds(BlockSoundGroup.AMETHYST_BLOCK).requiresTool().hardness(2.0f)),
+//            "esoteric_mixture",
+//            true
+//    );
+
     public static void initialize() {
-        ItemGroupEvents.modifyEntriesEvent(VividologicalItems.CUSTOM_ITEM_GROUP_KEY).register((itemGroup) -> {
-            itemGroup.add(VividologicalBlocks.COMPACTED_VIVINITE.asItem());
-        });
+//        ItemGroupEvents.modifyEntriesEvent(VividologicalItems.CUSTOM_ITEM_GROUP_KEY).register((itemGroup) -> {
+//            itemGroup.add(VividologicalBlocks.COMPACTED_VIVINITE.asItem());
+//        });
     }
 }

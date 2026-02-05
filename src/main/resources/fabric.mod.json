@@ -4,7 +4,7 @@
   "version": "${version}",
   "name": "Vividological",
   "description": "Cool materials! Deadly weapons! Funky trees! Stupid food! And more!!",
-  "authors": ["{sys:Erisatis}  (code), Dread (textures), Hayes (ideas), Sue (ideas), KindlingCinder (textures we recolored for compat reasons)"],
+  "authors": ["Erisatis Alterna (code), Dread (textures), Hayes (ideas), Sue (ideas), KindlingCinder (textures we recolored for compat reasons)"],
   "contact": {},
   "license": "WTFPL",
   "icon": "assets/vividological/icon.png",
@@ -31,6 +31,7 @@
     "fabricloader": ">=${loader_version}",
     "fabric-api": "*",
     "minecraft": "${minecraft_version}",
-    "trinkets": "3.10.0"
+    "trinkets": "3.10.0",
+    "fractal": "1.3.0+1.21"
   }
 }

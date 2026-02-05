@@ -116,22 +116,22 @@ public class VividologicalAdvancementProvider extends FabricAdvancementProvider 
                 .criterion("got_vivinitic_glaive", InventoryChangedCriterion.Conditions.items(VividologicalItems.VIVINITIC_GLAIVE))
                 // Give the advancement an id
                 .build(consumer, Vividological.MOD_ID + "/get_vivinitic_glaive");
-//        AdvancementEntry getVivalentCleaver = Advancement.Builder.create()
-//                .parent(processVivalent)
-//                .display(
-//                        VividologicalTweakfailureCompat.VIVALENT_CLEAVER, // The display icon
-//                        Text.literal("Seemingly Useless"), // The title
-//                        Text.literal("Craft a Vivalent Cleaver...is this just for decorative purposes?"), // The description
-//                        Identifier.ofVanilla("textures/gui/advancements/backgrounds/adventure.png"), // Background image for the tab in the advancements page, if this is a root advancement (has no parent)
-//                        AdvancementFrame.TASK, // TASK, CHALLENGE, or GOAL
-//                        true, // Show the toast when completing it
-//                        true, // Announce it to chat
-//                        true // Hide it in the advancement tab until it's achieved
-//                )
-//                // "got_dirt" is the name referenced by other advancements when they want to have "requirements."
-//                .criterion("got_vivalent_cleaver", InventoryChangedCriterion.Conditions.items(VividologicalItems.VIVALENTIC_GLAIVE))
-//                // Give the advancement an id
-//                .build(consumer, Vividological.MOD_ID + "/get_vivalent_cleaver");
+        AdvancementEntry getMercury = Advancement.Builder.create()
+                .parent(treeBeginner)
+                .display(
+                        VividologicalItems.MERCURIAL_COMPOUND, // The display icon
+                        Text.literal("Toxic Situation"), // The title
+                        Text.literal("Create an unknown compound"), // The description
+                        Identifier.ofVanilla("textures/gui/advancements/backgrounds/adventure.png"), // Background image for the tab in the advancements page, if this is a root advancement (has no parent)
+                        AdvancementFrame.TASK, // TASK, CHALLENGE, or GOAL
+                        true, // Show the toast when completing it
+                        true, // Announce it to chat
+                        false // Hide it in the advancement tab until it's achieved
+                )
+                // "got_dirt" is the name referenced by other advancements when they want to have "requirements."
+                .criterion("got_mercury", InventoryChangedCriterion.Conditions.items(VividologicalItems.MERCURIAL_COMPOUND))
+                // Give the advancement an id
+                .build(consumer, Vividological.MOD_ID + "/get_mercury");
     }
 
 }

@@ -1,6 +1,7 @@
-// 1.21.1	2026-02-01T01:41:43.4249522	Vividological/Advancements
+// 1.21.1	2026-02-05T15:06:00.8541448	Vividological/Advancements
 2f2e349e25634734d08d18440b9ec35b76b6cc89 data\minecraft\advancement\vividological\get_vivinite_ingot.json
 4359bf7070de7488a3f9458a026f89a1ed71c98a data\minecraft\advancement\vividological\vividological_advancement_starter.json
+f7db6931ab4936d11efc84aa5918cbec7df14d1b data\minecraft\advancement\vividological\get_mercury.json
 20f365c6477dd0d371d5758a83c82d8819ffa370 data\minecraft\advancement\vividological\get_shrouded_steel.json
 2cce80dee116a7789a083a28b1d15505f9c760a0 data\minecraft\advancement\vividological\get_vivinitic_glaive.json
 4ea642b6acdb827e378085d7eb5b3d60aca1d39e data\minecraft\advancement\vividological\get_raw_vivinite.json

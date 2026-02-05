@@ -52,8 +52,8 @@ public class ViviniticGlaive extends SwordItem {
     }
     @Override
     public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
-        tooltip.add(Text.translatable("itemTooltip.vividological.vivalentic_glaive_1").formatted(Formatting.DARK_PURPLE).formatted(Formatting.ITALIC));
-        tooltip.add(Text.translatable("itemTooltip.vividological.vivalentic_glaive_2").formatted(Formatting.DARK_PURPLE).formatted(Formatting.ITALIC));
+        tooltip.add(Text.translatable("itemTooltip.vividological.vivinitic_glaive_1").formatted(Formatting.DARK_PURPLE).formatted(Formatting.ITALIC));
+        tooltip.add(Text.translatable("itemTooltip.vividological.vivinitic_glaive_2").formatted(Formatting.DARK_PURPLE).formatted(Formatting.ITALIC));
     }
     @Override
     public Text getName(ItemStack stack) {

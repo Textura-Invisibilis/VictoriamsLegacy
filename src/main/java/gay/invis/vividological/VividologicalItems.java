@@ -2,6 +2,9 @@ package gay.invis.vividological;
 
 import gay.invis.vividological.importantTools.ViviniticGlaive;
 import gay.invis.vividological.toolMaterials.ViviniteToolMaterial;
+import gay.invis.vividological.tooltips.MercurialCompound;
+import gay.invis.vividological.tooltips.ShroudedSteelIngot;
+import gay.invis.vividological.tooltips.ViviniteCoin;
 import gay.invis.vividological.tooltips.ViviniteCrystal;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -40,13 +43,17 @@ public class VividologicalItems {
             new ViviniteCrystal(new Item.Settings()),
             "raw_vivinite_crystal"
     );
+    public static final Item VIVINITE_COIN = register(
+            new ViviniteCoin(new Item.Settings()),
+            "esoteric_coin"
+    );
     public static final Item VIVINITE_DUST = register(
             new Item(new Item.Settings()),
             "vivinite_dust"
     );
-    public static final Item CRYSTALLINE_COMPOUND = register(
-            new Item(new Item.Settings()),
-            "crystalline_compound"
+    public static final Item MERCURIAL_COMPOUND = register(
+            new MercurialCompound(new Item.Settings()),
+            "mercurial_compound"
     );
     public static final Item VIVINITE_INGOT = register(
             new Item(new Item.Settings()),
@@ -57,7 +64,7 @@ public class VividologicalItems {
             "dusted_eye"
     );
     public static final Item SHROUDED_STEEL_INGOT = register(
-            new Item(new Item.Settings()),
+            new ShroudedSteelIngot(new Item.Settings()),
             "shrouded_steel_ingot"
     );
     public static final Item VIVINITIC_GLAIVE = register(new ViviniticGlaive(ViviniteToolMaterial.INSTANCE,
@@ -66,26 +73,30 @@ public class VividologicalItems {
             "vivinitic_glaive"
             );
 
-    public static final RegistryKey<ItemGroup> CUSTOM_ITEM_GROUP_KEY = RegistryKey.of(Registries.ITEM_GROUP.getKey(), Identifier.of(Vividological.MOD_ID, "item_group"));
-    public static final ItemGroup CUSTOM_ITEM_GROUP = FabricItemGroup.builder()
-            .icon(() -> new ItemStack(VividologicalItems.VIVINITE_INGOT))
-            .displayName(Text.translatable("itemGroup.vividological"))
-            .build();
+//    public static final RegistryKey<ItemGroup> CUSTOM_ITEM_GROUP_KEY = RegistryKey.of(Registries.ITEM_GROUP.getKey(), Identifier.of(Vividological.MOD_ID, "item_group"));
+//    public static final ItemGroup CUSTOM_ITEM_GROUP = FabricItemGroup.builder()
+//            .icon(() -> new ItemStack(VividologicalItems.VIVINITE_INGOT))
+//            .displayName(Text.translatable("itemGroup.vividological"))
+//            .build();
 
     public static void initialize() {
         // Get the event for modifying entries in the ingredients group.
 // And register an event handler that adds our suspicious item to the ingredients group.
         // Register the group.
-        Registry.register(Registries.ITEM_GROUP, CUSTOM_ITEM_GROUP_KEY, CUSTOM_ITEM_GROUP);
-
-// Register items to the custom item group.
-        ItemGroupEvents.modifyEntriesEvent(CUSTOM_ITEM_GROUP_KEY).register(itemGroup -> {
-            itemGroup.add(VividologicalItems.VIVINITE_DUST);
-            itemGroup.add(VividologicalItems.VIVINITE_INGOT);
-            itemGroup.add(VividologicalItems.DUSTED_EYE);
-            itemGroup.add(VividologicalItems.RAW_VIVINITE_CRYSTAL);
-            // ...
-        });
+//        Registry.register(Registries.ITEM_GROUP, CUSTOM_ITEM_GROUP_KEY, CUSTOM_ITEM_GROUP);
+//
+//// Register items to the custom item group.
+//        ItemGroupEvents.modifyEntriesEvent(CUSTOM_ITEM_GROUP_KEY).register(itemGroup -> {
+//            itemGroup.add(VividologicalItems.VIVINITE_DUST);
+//            itemGroup.add(VividologicalItems.VIVINITE_INGOT);
+//            itemGroup.add(VividologicalItems.DUSTED_EYE);
+//            itemGroup.add(VividologicalItems.RAW_VIVINITE_CRYSTAL);
+//            itemGroup.add(VividologicalItems.SHROUDED_STEEL_INGOT);
+//            itemGroup.add(VividologicalItems.VIVINITE_COIN);
+//            itemGroup.add(VividologicalItems.VIVINITIC_GLAIVE);
+//            itemGroup.add(VividologicalItems.MERCURIAL_COMPOUND);
+//            // ...
+//        });
 
     }
 }

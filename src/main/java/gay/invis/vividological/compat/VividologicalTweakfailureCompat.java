@@ -10,8 +10,8 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 
-import static gay.invis.vividological.VividologicalItems.CUSTOM_ITEM_GROUP;
-import static gay.invis.vividological.VividologicalItems.CUSTOM_ITEM_GROUP_KEY;
+//import static gay.invis.vividological.VividologicalItems.CUSTOM_ITEM_GROUP;
+//import static gay.invis.vividological.VividologicalItems.CUSTOM_ITEM_GROUP_KEY;
 
 public class VividologicalTweakfailureCompat {
         public static Item register(Item item, String id) {
@@ -35,13 +35,13 @@ public class VividologicalTweakfailureCompat {
         // Get the event for modifying entries in the ingredients group.
 // And register an event handler that adds our suspicious item to the ingredients group.
         // Register the group.
-        Registry.register(Registries.ITEM_GROUP, CUSTOM_ITEM_GROUP_KEY, CUSTOM_ITEM_GROUP);
-
-// Register items to the custom item group.
-        ItemGroupEvents.modifyEntriesEvent(CUSTOM_ITEM_GROUP_KEY).register(itemGroup -> {
-            itemGroup.add(VividologicalTweakfailureCompat.VIVINITE_CLEAVER);
-            // ...
-        });
+//        Registry.register(Registries.ITEM_GROUP, CUSTOM_ITEM_GROUP_KEY, CUSTOM_ITEM_GROUP);
+//
+//// Register items to the custom item group.
+//        ItemGroupEvents.modifyEntriesEvent(CUSTOM_ITEM_GROUP_KEY).register(itemGroup -> {
+//            itemGroup.add(VividologicalTweakfailureCompat.VIVINITE_CLEAVER);
+//            // ...
+//        });
 
     }
 }

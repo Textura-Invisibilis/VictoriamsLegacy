@@ -1,17 +1,41 @@
 {
   "item.vividological.raw_vivinite_crystal": "Crystalline Vivinite",
   "itemTooltip.vividological.raw_vivinite_crystal_1": "It vibrates in your hand.",
-  "itemTooltip.vividological.raw_vivinite_crystal_2": "You feel as though this... shouldn't exist.",
+  "itemTooltip.vividological.raw_vivinite_crystal_2": "You feel as though... this shouldn't exist.",
   "item.vividological.vivinite_dust": "Vivinite Dust",
   "item.vividological.vivinite_ingot": "Vivinite Alloy",
   "item.vividological.dusted_eye": "Vivid Eye",
   "item.vividological.vivinitic_glaive": "Vivinitic Glaive",
   "itemTooltip.vividological.vivinitic_glaive_1": "A weapon from a more civilised age.",
   "itemTooltip.vividological.vivinitic_glaive_2": "What was its purpose...?",
+
   "itemGroup.vividological": "Vividological",
+  "itemGroup.vividological.resources": "Materials",
+  "itemGroup.vividological.equipment": "Equipment",
+  "itemGroup.vividological.cuisine": "Consumables",
+  "itemGroup.vividological.miscellaneous": "Miscellaneous",
+
   "block.vividological.compacted_vivinite": "Compacted Vivinite",
   "item.vividological.shrouded_steel_ingot": "Shrouded Steel Ingot",
+  "itemTooltip.vividological.shrouded_steel_1": "A material once used by those who prioritized stealth above all.",
+  "itemTooltip.vividological.shrouded_steel_2": "It's not used much nowadays.",
   "item.vividological.vivinite_cleaver": "Vivinite Cleaver",
   "itemTooltip.vividological.vivinite_cleaver_1": "A ceremonial tool rarely used in combat.",
-  "itemTooltip.vividological.vivinite_cleaver_2": "Seems to be just decorative."
+  "itemTooltip.vividological.vivinite_cleaver_2": "Seems to be just decorative.",
+  "item.vividological.esoteric_coin": "Vivinite Coin",
+  "itemTooltip.vividological.vivinite_coin_1": "The esoteric currency of Ilias Vivamortem.",
+  "itemTooltip.vividological.vivinite_coin_2": "Counterfeiting will result in instant death.",
+  "itemTooltip.vividological.vivinite_coin_3": "",
+  "itemTooltip.vividological.vivinite_coin_4": "...wait, how do you even get these?",
+
+  "item.vividological.mercurial_compound": "Mercurial Compound",
+  "itemTooltip.vividological.mercurial_compound_1": "Speedy, yet toxic.",
+
+  "effect.vividological.mercuric_poison": "Mercuric Toxicity",
+  "item.minecraft.potion.effect.mercuric_poison": "Potion of Mercuric Toxicity",
+  "item.minecraft.splash_potion.effect.mercuric_poison": "Splash Potion of Mercuric Toxicity",
+  "item.minecraft.lingering_potion.effect.mercuric_poison": "Lingering Potion of Mercuric Toxicity",
+  "item.minecraft.tipped_arrow.effect.mercuric_poison": "Mercury-Dipped Arrow",
+  "death.attack.mercuric_poison": "%s consumed toxic chemicals",
+  "death.attack.mercuric_poison.player": "%s consumed toxic chemicals to try and gain an edge over %s"
 }

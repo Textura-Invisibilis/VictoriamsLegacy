@@ -8,17 +8,16 @@ import net.minecraft.util.Formatting;
 
 import java.util.List;
 
-public class ViviniteCrystal extends Item {
-    public ViviniteCrystal(Settings settings){
+public class MercurialCompound extends Item {
+    public MercurialCompound(Settings settings){
         super(settings);
     }
     @Override
     public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
-        tooltip.add(Text.translatable("itemTooltip.vividological.raw_vivinite_crystal_1").formatted(Formatting.DARK_PURPLE, Formatting.ITALIC));
-        tooltip.add(Text.translatable("itemTooltip.vividological.raw_vivinite_crystal_2").formatted(Formatting.DARK_PURPLE, Formatting.ITALIC));
+        tooltip.add(Text.translatable("itemTooltip.vividological.mercurial_compound_1").formatted(Formatting.DARK_PURPLE, Formatting.ITALIC));
     }
     @Override
     public Text getName(ItemStack stack) {
-        return super.getName(stack).copy().styled(style -> style.withColor(0xc7f069));
+        return super.getName(stack).copy().styled(style -> style.withColor(0x9da19c));
     }
 }

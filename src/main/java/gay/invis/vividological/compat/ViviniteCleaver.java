@@ -15,8 +15,8 @@ public class ViviniteCleaver extends CleaverItem {
         super(toolMaterial, settings);
     }
     public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
-        tooltip.add(Text.translatable("itemTooltip.vividological.vivalent_cleaver_1").formatted(Formatting.DARK_PURPLE).formatted(Formatting.ITALIC));
-        tooltip.add(Text.translatable("itemTooltip.vividological.vivalent_cleaver_2").formatted(Formatting.DARK_PURPLE).formatted(Formatting.ITALIC));
+        tooltip.add(Text.translatable("itemTooltip.vividological.vivinite_cleaver_1").formatted(Formatting.DARK_PURPLE).formatted(Formatting.ITALIC));
+        tooltip.add(Text.translatable("itemTooltip.vividological.vivinite_cleaver_2").formatted(Formatting.DARK_PURPLE).formatted(Formatting.ITALIC));
     }
     @Override
     public Text getName(ItemStack stack) {
