@@ -41,7 +41,7 @@ public class VividologicalAdvancementProvider extends FabricAdvancementProvider 
                 .display(
                         VividologicalItems.RAW_VIVINITE_CRYSTAL, // The display icon
                         Text.literal("Crystalline Reconstruction"), // The title
-                        Text.literal("Do some chemical experiments and manufacture a new mineral"), // The description
+                        Text.literal("Manufacture a new mineral"), // The description
                         Identifier.ofVanilla("textures/gui/advancements/backgrounds/adventure.png"), // Background image for the tab in the advancements page, if this is a root advancement (has no parent)
                         AdvancementFrame.TASK, // TASK, CHALLENGE, or GOAL
                         true, // Show the toast when completing it

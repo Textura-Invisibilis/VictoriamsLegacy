@@ -24,7 +24,8 @@ public class Vividological implements ModInitializer {
             VividologicalTweakfailureCompat.initialize();
             LOGGER.info("Tweakfailure, you've gained a new friend!");
         } else {
-            LOGGER.info("We succeeded at tweaking some things, but something might've happened if we failed...");
+            LOGGER.info("Alchemical physics have been introduced to reality!");
+            LOGGER.info("Kinda bored being alone though.");
         }
     }
     public static Identifier id(String path) {

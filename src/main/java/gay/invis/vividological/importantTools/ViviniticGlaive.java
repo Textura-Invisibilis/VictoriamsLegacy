@@ -2,6 +2,7 @@ package gay.invis.vividological.importantTools;
 
 import gay.invis.vividological.toolMaterials.ViviniteToolMaterial;
 import net.minecraft.entity.EntityType;
+import net.minecraft.entity.LightningEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.projectile.FireballEntity;
 import net.minecraft.item.ItemStack;
@@ -41,10 +42,6 @@ public class ViviniticGlaive extends SwordItem {
         FireballEntity placeholderFireball = new FireballEntity(EntityType.FIREBALL, world);
         placeholderFireball.setPosition(frontOfPlayer.toCenterPos());
         world.spawnEntity(placeholderFireball);
-
-//        LightningEntity lightningBolt = new LightningEntity(EntityType.LIGHTNING_BOLT, world);
-//        lightningBolt.setPosition(frontOfPlayer.toCenterPos());
-//        world.spawnEntity(lightningBolt);
 
         // Nothing has changed to the item stack,
         // so we just return it how it was.
