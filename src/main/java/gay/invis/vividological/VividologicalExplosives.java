@@ -2,6 +2,7 @@ package gay.invis.vividological;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.EntityType;
+import net.minecraft.entity.LightningEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.projectile.FireballEntity;
 import net.minecraft.entity.projectile.thrown.ThrownItemEntity;
@@ -26,6 +27,8 @@ public class VividologicalExplosives extends FireballEntity {
         if (!this.getWorld().isClient) { // checks if the world is client
             this.getWorld().sendEntityStatus(this, (byte)3); // particle?
 
+            LightningEntity lightningBolt = new LightningEntity(EntityType.LIGHTNING_BOLT, getWorld());
+            getWorld().spawnEntity(lightningBolt);
             this.kill(); // kills the projectile
         }
     }

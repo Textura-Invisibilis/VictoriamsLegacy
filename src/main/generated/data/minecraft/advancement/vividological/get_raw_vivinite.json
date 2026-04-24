@@ -14,7 +14,7 @@
   },
   "display": {
     "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
-    "description": "Do some chemical experiments and manufacture a new mineral",
+    "description": "Manufacture a new mineral",
     "icon": {
       "count": 1,
       "id": "vividological:raw_vivinite_crystal"

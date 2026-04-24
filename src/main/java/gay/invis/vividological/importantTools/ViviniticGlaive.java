@@ -1,6 +1,8 @@
 package gay.invis.vividological.importantTools;
 
+import gay.invis.vividological.VividologicalExplosives;
 import gay.invis.vividological.toolMaterials.ViviniteToolMaterial;
+import net.minecraft.block.Block;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LightningEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -14,6 +16,8 @@ import net.minecraft.util.Formatting;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Vec3d;
+import net.minecraft.util.math.Vec3i;
 import net.minecraft.world.World;
 
 import java.util.List;
@@ -35,8 +39,8 @@ public class ViviniticGlaive extends SwordItem {
             return pass(user.getStackInHand(hand));
         }
 
-        BlockPos frontOfPlayer = user.getBlockPos().offset(user.getHorizontalFacing(), 5);
-
+        BlockPos frontOfPlayer = user.getBlockPos().offset(user.getHorizontalFacing());
+        BlockPos actualPlayerPos = user.getBlockPos();
         // Spawn the lightning bolt.
 
         FireballEntity placeholderFireball = new FireballEntity(EntityType.FIREBALL, world);

@@ -38,6 +38,7 @@ public class VividologicalItemGroup {
     public static final ItemGroup CUISINE = new ItemSubGroup.Builder(MAIN, Identifier.of("vividological", "cuisine"), Text.translatable("itemGroup.vividological.cuisine")).entries(
             (displayContext, entries) -> {
                 entries.add(VividologicalItems.DUSTED_EYE);
+                entries.add(VividologicalItems.VIVINITE_DUST);
             }).build();
     public static final ItemGroup RESOURCES = new ItemSubGroup.Builder(MAIN, Identifier.of("vividological", "resources"), Text.translatable("itemGroup.vividological.resources")).entries(
             (displayContext, entries) -> {
@@ -46,7 +47,6 @@ public class VividologicalItemGroup {
                 entries.add(VividologicalBlocks.COMPACTED_VIVINITE);
                 entries.add(VividologicalItems.MERCURIAL_COMPOUND);
                 entries.add(VividologicalItems.SHROUDED_STEEL_INGOT);
-                entries.add(VividologicalItems.VIVINITE_DUST);
             }).build();
     public static final ItemGroup MISCELLANEOUS = new ItemSubGroup.Builder(MAIN, Identifier.of("vividological", "miscellaneous"), Text.translatable("itemGroup.vividological.miscellaneous")).entries(
             (displayContext, entries) -> {
